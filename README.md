@@ -1,14 +1,14 @@
 ```mermaid
 flowchart LR
     subgraph Internet
-        A[Websites / Applications]
+        A["Websites / Applications"]
     end
 
-    B[Server Host]
-    C[WiFi Router\n(Private IP, Secure)]
-    D[WiFi Device\n(WiFi Sentinel)\nacts like firewall]
-    E[Security Monitoring\n(Alerts / Logs / Response)]
-    F[Hacker / Threat Actor]
+    B["Server Host"]
+    C["WiFi Router<br/>(Private IP, Secure)"]
+    D["WiFi Device<br/>(WiFi Sentinel)<br/>acts like firewall"]
+    E["Security Monitoring<br/>(Alerts / Logs / Response)"]
+    F["Hacker / Threat Actor"]
 
     A -->|HTTP/HTTPS, API| B
     B -->|Private connection| C
